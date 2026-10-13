@@ -4,6 +4,7 @@
   --line: #e6e8ee;
   --bg: #ffffff;
   --accent: #0f766e;
+  --accent-cyan: #22d3ee;
 }
 
 * { box-sizing: border-box; }
@@ -22,9 +23,18 @@ body {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
   font-weight: 700;
   text-decoration: none;
   color: var(--ink);
+}
+
+.brand-mark {
+  display: block;
+  width: 26px;
+  height: 26px;
 }
 
 main {
