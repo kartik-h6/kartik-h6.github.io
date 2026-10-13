@@ -1,0 +1,86 @@
+:root {
+  --ink: #0b1020;
+  --muted: #5b6478;
+  --line: #e6e8ee;
+  --bg: #ffffff;
+  --accent: #0f766e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.site-head {
+  border-bottom: 1px solid var(--line);
+  padding: 1rem 1.5rem;
+}
+
+.brand {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+main {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+h1 { font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem); margin: 0 0 .5rem; }
+
+.lede { color: var(--muted); font-size: 1.1rem; }
+
+h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--muted);
+  margin-top: 2.5rem;
+}
+
+.grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: .75rem;
+}
+
+.grid a {
+  display: block;
+  padding: .9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: .6rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.grid a:hover { border-color: var(--accent); }
+
+.placeholder {
+  color: var(--muted);
+  background: #f7f8fa;
+  border-left: 3px solid var(--accent);
+  padding: .75rem 1rem;
+}
+
+code {
+  background: #f2f3f6;
+  padding: .1rem .35rem;
+  border-radius: .25rem;
+  font-size: .9em;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--muted);
+}

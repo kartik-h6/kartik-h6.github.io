@@ -1,0 +1,5 @@
+# Root-relative paths work because this is the user site (served at the domain root).
+User-agent: *
+Allow: /
+
+Sitemap: https://kartik-h6.github.io/sitemap.xml
