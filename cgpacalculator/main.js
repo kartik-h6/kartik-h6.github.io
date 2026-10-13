@@ -1,6 +1,11 @@
 // Area behaviour for /cgpacalculator/ — computes SGPA and CGPA in the browser.
 // Rows are built with createElement and values read from input properties, so
 // no user-entered text is ever inserted as markup.
+//
+// Note on the column indices passed to weightedAverage():
+//   SGPA rows have three inputs — subject, credits, grade point  -> (1, 2)
+//   CGPA rows have two inputs  — credits, SGPA                   -> (0, 1)
+// These differ because the CGPA table's first cell is a text label, not an input.
 document.addEventListener('DOMContentLoaded', function () {
   var sgpaBody = document.getElementById('sgpa-rows');
   var cgpaBody = document.getElementById('cgpa-rows');
@@ -62,8 +67,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     Array.prototype.forEach.call(body.children, function (row) {
       var inputs = row.querySelectorAll('input');
-      var credits = parseFloat(inputs[creditsIndex].value);
-      var value = parseFloat(inputs[valueIndex].value);
+      var creditsInput = inputs[creditsIndex];
+      var valueInput = inputs[valueIndex];
+      if (!creditsInput || !valueInput) return;
+
+      var credits = parseFloat(creditsInput.value);
+      var value = parseFloat(valueInput.value);
 
       if (!isNaN(credits) && !isNaN(value) && credits > 0) {
         totalCredits += credits;
@@ -97,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document.getElementById('calc-cgpa').addEventListener('click', function () {
     var out = document.getElementById('cgpa-result');
-    var cgpa = weightedAverage(cgpaBody, 1, 2);
+    var cgpa = weightedAverage(cgpaBody, 0, 1);
     out.textContent = cgpa === null ? 'Enter semester credits and SGPAs first.' : 'CGPA: ' + cgpa.toFixed(2);
   });
 });
