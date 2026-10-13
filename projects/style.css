@@ -1,0 +1,58 @@
+/* Area layer for /projects/
+   Extends /assets/css/style.css — accent override + card grid and filter chips. */
+:root { --accent: #1d4ed8; }
+
+.area-kicker {
+  margin: 0 0 .25rem;
+  font-size: .78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--accent);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 1.75rem 0 1rem;
+}
+
+.chip {
+  font: inherit;
+  font-size: .85rem;
+  padding: .35rem .9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.chip:hover { border-color: var(--accent); color: var(--accent); }
+.chip.is-active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.cards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: .7rem;
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 { margin: 0 0 .4rem; font-size: 1.05rem; }
+.card p { margin: 0 0 .6rem; color: var(--muted); font-size: .93rem; }
+.card-links { margin-top: auto; }
+.card-links a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.card-links a:hover { text-decoration: underline; }
+
+.card[hidden] { display: none; }

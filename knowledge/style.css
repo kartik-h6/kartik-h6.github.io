@@ -1,0 +1,49 @@
+/* Area layer for /knowledge/
+   Extends /assets/css/style.css — accent override + search field and note list. */
+:root { --accent: #b45309; }
+
+.area-kicker {
+  margin: 0 0 .25rem;
+  font-size: .78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--accent);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+.search { display: block; margin: 1.75rem 0 1rem; }
+
+.search input {
+  font: inherit;
+  width: 100%;
+  max-width: 26rem;
+  padding: .65rem .9rem;
+  border: 1px solid var(--line);
+  border-radius: .6rem;
+  background: #fff;
+  color: var(--ink);
+}
+
+.search input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.notes { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem; }
+
+.note {
+  border: 1px solid var(--line);
+  border-radius: .6rem;
+  padding: .9rem 1rem;
+}
+
+.note h3 { margin: 0 0 .25rem; font-size: .98rem; }
+.note p { margin: 0; color: var(--muted); font-size: .92rem; }
+.note[hidden] { display: none; }
+
+.empty { color: var(--muted); }

@@ -1,0 +1,49 @@
+/* Area layer for /contact/
+   Extends /assets/css/style.css — accent override + contact actions and links. */
+:root { --accent: #0d9488; }
+
+.area-kicker {
+  margin: 0 0 .25rem;
+  font-size: .78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--accent);
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .75rem;
+  margin: 1.75rem 0 0;
+}
+
+.btn-primary,
+.btn-copy {
+  font: inherit;
+  font-size: .95rem;
+  padding: .6rem 1.1rem;
+  border-radius: .55rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-copy {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.btn-copy:hover { border-color: var(--accent); color: var(--accent); }
+
+.links { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .5rem; }
+.links a { color: var(--accent); font-weight: 600; text-decoration: none; }
+.links a:hover { text-decoration: underline; }

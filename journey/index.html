@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Journey · Kartik H</title>
+  <meta name="description" content="Education, roles and milestones — B.Pharm, hospital pharmacy, M.Pharm Pharmacy Practice.">
   <link rel="icon" href="/assets/images/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
@@ -11,13 +12,19 @@
   <meta property="og:image" content="https://kartik-h6.github.io/assets/images/og/og-journey.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/journey/style.css">
 </head>
 <body>
   <header class="site-head"><nav><a class="brand" href="/"><img class="brand-mark" src="/assets/images/icons/logo-hexagon-cube.svg" alt="" width="26" height="26"><span>Kartik H</span></a></nav></header>
   <main>
+    <p class="area-kicker">Journey</p>
     <h1>Journey</h1>
-    <p class="placeholder">Placeholder — replace this file at <code>journey/index.html</code>.</p>
-    <p><a href="/">← Back to home</a></p>
+    <p class="lede">Education, roles and milestones.</p>
+
+    <!-- Entries are rendered from the data array in main.js — add to that list, not to the markup. -->
+    <ol class="timeline" id="timeline"></ol>
   </main>
+  <footer><a href="/">Home</a> · <a href="/about/">About</a> · <a href="/contact/">Contact</a></footer>
+  <script src="/journey/main.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+/* Area layer for /journey/
+   Extends /assets/css/style.css — accent override + vertical timeline. */
+:root { --accent: #7c3aed; }
+
+.area-kicker {
+  margin: 0 0 .25rem;
+  font-size: .78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--accent);
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  border-left: 2px solid var(--line);
+}
+
+.timeline li {
+  position: relative;
+  padding: 0 0 1.5rem 1.5rem;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: .45rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.timeline .when {
+  display: block;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.timeline .what { margin: .2rem 0 .15rem; font-size: 1.02rem; }
+.timeline .where { margin: 0; color: var(--muted); font-size: .92rem; }

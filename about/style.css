@@ -1,0 +1,32 @@
+/* Area layer for /about/
+   Extends /assets/css/style.css — it never replaces it. Loaded after the
+   shared sheet, so it can override the accent for this folder only. */
+:root { --accent: #0f766e; }
+
+.area-kicker {
+  margin: 0 0 .25rem;
+  font-size: .78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--accent);
+}
+
+.kv {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: .75rem;
+}
+
+.kv li {
+  display: grid;
+  gap: .15rem;
+  padding: .9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: .6rem;
+}
+
+.kv strong { font-size: .95rem; }
+.kv span { color: var(--muted); font-size: .92rem; }

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects · Kartik H</title>
+  <meta name="description" content="Projects: PMAS, the TechStudyHubCore archive, and tools.">
   <link rel="icon" href="/assets/images/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
@@ -11,13 +12,46 @@
   <meta property="og:image" content="https://kartik-h6.github.io/assets/images/og/og-projects.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/projects/style.css">
 </head>
 <body>
   <header class="site-head"><nav><a class="brand" href="/"><img class="brand-mark" src="/assets/images/icons/logo-hexagon-cube.svg" alt="" width="26" height="26"><span>Kartik H</span></a></nav></header>
   <main>
+    <p class="area-kicker">Projects</p>
     <h1>Projects</h1>
-    <p class="placeholder">Placeholder — replace this file at <code>projects/index.html</code>.</p>
-    <p><a href="/">← Back to home</a></p>
+    <p class="lede">Things built, and things being built.</p>
+
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button class="chip is-active" data-filter="all">All</button>
+      <button class="chip" data-filter="health">Health</button>
+      <button class="chip" data-filter="education">Education</button>
+      <button class="chip" data-filter="tool">Tools</button>
+    </div>
+
+    <ul class="cards">
+      <li class="card" data-tags="health tool">
+        <h3>PMAS</h3>
+        <p>Pharmacist-led medication and adherence support — offline-first, five languages, built for rural chronic care.</p>
+        <p class="card-links"><a href="https://github.com/kartik-h6/PMAS">Repository</a></p>
+      </li>
+      <li class="card" data-tags="education">
+        <h3>TechStudyHubCore archive</h3>
+        <p>The complete record of a retired education platform — what was built, what failed, and what was learned.</p>
+        <p class="card-links"><a href="https://github.com/kartik-h6/techstudyhubcore-archive">Repository</a></p>
+      </li>
+      <li class="card" data-tags="tool education">
+        <h3>CGPA Calculator</h3>
+        <p>SGPA and CGPA calculator mapped to the PCI B.Pharm syllabus.</p>
+        <p class="card-links"><a href="/cgpacalculator/">Open tool</a></p>
+      </li>
+      <li class="card" data-tags="education">
+        <h3>This site</h3>
+        <p>One repository, paths instead of subdomains — the structure that replaced five separate deployments.</p>
+        <p class="card-links"><a href="https://github.com/kartik-h6/kartik-h6.github.io">Repository</a></p>
+      </li>
+    </ul>
   </main>
+  <footer><a href="/">Home</a> · <a href="/research/">Research</a> · <a href="/contact/">Contact</a></footer>
+  <script src="/projects/main.js" defer></script>
 </body>
 </html>

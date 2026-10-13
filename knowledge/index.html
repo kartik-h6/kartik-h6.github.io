@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Knowledge · Kartik H</title>
+  <meta name="description" content="Notes and reference material on pharmacy practice, adherence and digital health.">
   <link rel="icon" href="/assets/images/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
@@ -11,13 +12,32 @@
   <meta property="og:image" content="https://kartik-h6.github.io/assets/images/og/og-knowledge.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/knowledge/style.css">
 </head>
 <body>
   <header class="site-head"><nav><a class="brand" href="/"><img class="brand-mark" src="/assets/images/icons/logo-hexagon-cube.svg" alt="" width="26" height="26"><span>Kartik H</span></a></nav></header>
   <main>
+    <p class="area-kicker">Knowledge</p>
     <h1>Knowledge</h1>
-    <p class="placeholder">Placeholder — replace this file at <code>knowledge/index.html</code>.</p>
-    <p><a href="/">← Back to home</a></p>
+    <p class="lede">Notes and reference material, kept short enough to be useful.</p>
+
+    <label class="search">
+      <span class="visually-hidden">Search notes</span>
+      <input type="search" id="note-search" placeholder="Search notes…" autocomplete="off">
+    </label>
+
+    <ul class="notes" id="notes">
+      <li class="note"><h3>Medication adherence</h3><p>How adherence is measured, and what the common instruments actually capture.</p></li>
+      <li class="note"><h3>Telepharmacy</h3><p>What remote counselling changes for the patient, and what it does not.</p></li>
+      <li class="note"><h3>PCI syllabus structure</h3><p>Program → semester → subject → unit, and why the PDF is not the architecture.</p></li>
+      <li class="note"><h3>DPDP Act basics</h3><p>Consent, purpose limitation, and the extra duties owed to children.</p></li>
+      <li class="note"><h3>Clinical data management</h3><p>Documentation standards and how hospitals actually use their data.</p></li>
+      <li class="note"><h3>Plain-language writing</h3><p>Turning a clinical finding into a sentence a patient can act on.</p></li>
+    </ul>
+
+    <p class="empty" id="notes-empty" hidden>No notes match that search.</p>
   </main>
+  <footer><a href="/">Home</a> · <a href="/research/">Research</a> · <a href="/contact/">Contact</a></footer>
+  <script src="/knowledge/main.js" defer></script>
 </body>
 </html>
