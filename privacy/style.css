@@ -1,0 +1,32 @@
+/* Area layer for /privacy/
+   Extends /assets/css/style.css — accent override + long-form reading styles. */
+:root { --accent: #475569; }
+
+.area-kicker {
+  margin: 0 0 .25rem;
+  font-size: .78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--accent);
+}
+
+main section { max-width: 46rem; }
+
+.plain { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .6rem; }
+
+.plain li {
+  border-left: 3px solid var(--line);
+  padding: .2rem 0 .2rem .9rem;
+  color: var(--muted);
+}
+
+.plain strong { color: var(--ink); }
+
+.note {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: .88rem;
+  color: var(--muted);
+}

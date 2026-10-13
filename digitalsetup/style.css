@@ -1,0 +1,41 @@
+/* Area layer for /digitalsetup/
+   Extends /assets/css/style.css — accent override + service list and steps. */
+:root { --accent: #047857; }
+
+.area-kicker {
+  margin: 0 0 .25rem;
+  font-size: .78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--accent);
+}
+
+.kv { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .75rem; }
+
+.kv li {
+  display: grid;
+  gap: .15rem;
+  padding: .9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: .6rem;
+}
+
+.kv strong { font-size: .95rem; }
+.kv span { color: var(--muted); font-size: .92rem; }
+
+.steps { margin: 1rem 0 0; padding-left: 1.2rem; color: var(--muted); }
+.steps li { margin-bottom: .45rem; }
+
+.btn-primary {
+  display: inline-block;
+  font: inherit;
+  font-size: .95rem;
+  font-weight: 600;
+  padding: .6rem 1.1rem;
+  border-radius: .55rem;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: #fff;
+  text-decoration: none;
+}

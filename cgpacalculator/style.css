@@ -1,0 +1,88 @@
+/* Area layer for /cgpacalculator/
+   Extends /assets/css/style.css — accent override + calculator table and buttons. */
+:root { --accent: #1d4ed8; }
+
+.area-kicker {
+  margin: 0 0 .25rem;
+  font-size: .78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--accent);
+}
+
+.calc {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: .93rem;
+}
+
+.calc th,
+.calc td {
+  border: 1px solid var(--line);
+  padding: .5rem .6rem;
+  text-align: left;
+}
+
+.calc th {
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--muted);
+  background: #f7f8fa;
+}
+
+.calc input {
+  font: inherit;
+  width: 100%;
+  min-width: 4.5rem;
+  padding: .35rem .45rem;
+  border: 1px solid var(--line);
+  border-radius: .35rem;
+  background: #fff;
+  color: var(--ink);
+}
+
+.calc input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.calc-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: 1rem;
+}
+
+.btn-primary,
+.btn-ghost {
+  font: inherit;
+  font-size: .9rem;
+  padding: .55rem 1rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+.result {
+  margin-top: 1rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.hint { color: var(--muted); font-size: .92rem; }
+.note { margin-top: 2.5rem; font-size: .88rem; color: var(--muted); }

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SSLC · Kartik H</title>
+  <meta name="description" content="Karnataka SSLC learning resources in Kannada and English.">
   <link rel="icon" href="/assets/images/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
@@ -11,14 +12,46 @@
   <meta property="og:image" content="https://kartik-h6.github.io/assets/images/og/og-sslc.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/sslc/style.css">
 </head>
 <body>
   <header class="site-head"><nav><a class="brand" href="/"><img class="brand-mark" src="/assets/images/icons/logo-hexagon-cube.svg" alt="" width="26" height="26"><span>Kartik H</span></a></nav></header>
   <main>
+    <p class="area-kicker">Area</p>
     <h1>SSLC</h1>
-    <p class="placeholder">Placeholder — replace this file at <code>sslc/index.html</code>.</p>
-    <p>Its own folder means its own URL: <code>/sslc/</code>.</p>
-    <p><a href="/">← Back to home</a></p>
+    <p class="lede">Karnataka SSLC learning material, built in Kannada and English.</p>
+
+    <div class="notice">
+      <strong>For parents and guardians.</strong>
+      This area is used by students in the 14–16 age range. Anything involving a student's
+      personal data requires verifiable consent from a parent or guardian, and no behavioural
+      tracking or targeted advertising is used here. See <a href="/privacy/">Privacy</a>.
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter subjects">
+      <button class="chip is-active" data-filter="all">All</button>
+      <button class="chip" data-filter="science">Science</button>
+      <button class="chip" data-filter="maths">Maths</button>
+      <button class="chip" data-filter="social">Social Science</button>
+      <button class="chip" data-filter="language">Languages</button>
+    </div>
+
+    <ul class="cards">
+      <li class="card" data-tags="science"><h3>Science</h3><p>Concepts explained with worked examples and diagrams.</p></li>
+      <li class="card" data-tags="maths"><h3>Mathematics</h3><p>Step-by-step methods, with practice sets.</p></li>
+      <li class="card" data-tags="social"><h3>Social Science</h3><p>History, geography, civics and economics, structured for revision.</p></li>
+      <li class="card" data-tags="language"><h3>Kannada</h3><p>Prose, poetry and grammar.</p></li>
+      <li class="card" data-tags="language"><h3>English</h3><p>Reading, writing and grammar.</p></li>
+    </ul>
+
+    <section>
+      <h2>Pilot batch</h2>
+      <p>The first batch ran as a pilot with <strong>25 seats</strong>, delivered in <strong>Kannada and English</strong>. What it produced — including what did not work — is written up in the <a href="https://github.com/kartik-h6/techstudyhubcore-archive">archive</a>.</p>
+    </section>
+
+    <p class="note">Subject names follow the Karnataka SSLC scheme. Material is added as it is written.</p>
   </main>
+  <footer><a href="/">Home</a> · <a href="/privacy/">Privacy</a> · <a href="/contact/">Contact</a></footer>
+  <script src="/sslc/main.js" defer></script>
 </body>
 </html>

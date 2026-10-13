@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CGPA Calculator · Kartik H</title>
+  <meta name="description" content="SGPA and CGPA calculator — credits and grade points, any grading scale.">
   <link rel="icon" href="/assets/images/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
@@ -11,14 +12,45 @@
   <meta property="og:image" content="https://kartik-h6.github.io/assets/images/og/og-cgpacalculator.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/cgpacalculator/style.css">
 </head>
 <body>
   <header class="site-head"><nav><a class="brand" href="/"><img class="brand-mark" src="/assets/images/icons/logo-hexagon-cube.svg" alt="" width="26" height="26"><span>Kartik H</span></a></nav></header>
   <main>
+    <p class="area-kicker">Tool</p>
     <h1>CGPA Calculator</h1>
-    <p class="placeholder">Placeholder — replace this file at <code>cgpacalculator/index.html</code>.</p>
-    <p>Its own folder means its own URL: <code>/cgpacalculator/</code>.</p>
-    <p><a href="/">← Back to home</a></p>
+    <p class="lede">SGPA is Σ(credits × grade point) ÷ Σ credits. Grade points are entered as numbers, so this works with any grading scale.</p>
+
+    <section>
+      <h2>SGPA</h2>
+      <table class="calc">
+        <thead><tr><th>Subject</th><th>Credits</th><th>Grade point</th></tr></thead>
+        <tbody id="sgpa-rows"></tbody>
+      </table>
+      <div class="calc-actions">
+        <button id="add-row" class="btn-ghost" type="button">Add subject</button>
+        <button id="calc-sgpa" class="btn-primary" type="button">Calculate SGPA</button>
+      </div>
+      <p class="result" id="sgpa-result" aria-live="polite">—</p>
+    </section>
+
+    <section>
+      <h2>CGPA</h2>
+      <p class="hint">From each semester's SGPA and the total credits in that semester.</p>
+      <table class="calc">
+        <thead><tr><th>Semester</th><th>Credits</th><th>SGPA</th></tr></thead>
+        <tbody id="cgpa-rows"></tbody>
+      </table>
+      <div class="calc-actions">
+        <button id="add-sem" class="btn-ghost" type="button">Add semester</button>
+        <button id="calc-cgpa" class="btn-primary" type="button">Calculate CGPA</button>
+      </div>
+      <p class="result" id="cgpa-result" aria-live="polite">—</p>
+    </section>
+
+    <p class="note">Runs entirely in your browser — nothing is sent anywhere. Your regulation's letter-to-point mapping (O, A+, A …) can be added to this page later.</p>
   </main>
+  <footer><a href="/">Home</a> · <a href="/pharmacy/">Pharmacy</a> · <a href="/contact/">Contact</a></footer>
+  <script src="/cgpacalculator/main.js" defer></script>
 </body>
 </html>

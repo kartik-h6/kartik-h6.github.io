@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pharmacy · Kartik H</title>
+  <meta name="description" content="B.Pharm syllabus, mapped semester by semester.">
   <link rel="icon" href="/assets/images/favicon/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
@@ -11,14 +12,37 @@
   <meta property="og:image" content="https://kartik-h6.github.io/assets/images/og/og-pharmacy.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/pharmacy/style.css">
 </head>
 <body>
   <header class="site-head"><nav><a class="brand" href="/"><img class="brand-mark" src="/assets/images/icons/logo-hexagon-cube.svg" alt="" width="26" height="26"><span>Kartik H</span></a></nav></header>
   <main>
+    <p class="area-kicker">Area</p>
     <h1>Pharmacy</h1>
-    <p class="placeholder">Placeholder — replace this file at <code>pharmacy/index.html</code>.</p>
-    <p>Its own folder means its own URL: <code>/pharmacy/</code>. Sub-pages go in sub-folders, e.g. <code>pharmacy/semester-3/index.html</code> → <code>/pharmacy/semester-3/</code>.</p>
-    <p><a href="/">← Back to home</a></p>
+    <p class="lede">The B.Pharm programme, mapped as a structure — programme, semester, subject — rather than a folder of PDFs.</p>
+
+    <div class="filters" role="group" aria-label="Filter semesters">
+      <button class="chip is-active" data-filter="all">All</button>
+      <button class="chip" data-filter="1">Year 1</button>
+      <button class="chip" data-filter="2">Year 2</button>
+      <button class="chip" data-filter="3">Year 3</button>
+      <button class="chip" data-filter="4">Year 4</button>
+    </div>
+
+    <ul class="cards">
+      <li class="card" data-year="1"><h3>Semester 1</h3><p>Foundations — human anatomy and physiology, pharmaceutics, inorganic chemistry.</p></li>
+      <li class="card" data-year="1"><h3>Semester 2</h3><p>Pharmaceutical organic chemistry, physical pharmaceutics, biochemistry.</p></li>
+      <li class="card" data-year="2"><h3>Semester 3</h3><p>Pharmaceutical microbiology, medicinal chemistry, pharmaceutical engineering.</p></li>
+      <li class="card" data-year="2"><h3>Semester 4</h3><p>Pharmacology, pharmacognosy, pharmaceutical analysis.</p></li>
+      <li class="card" data-year="3"><h3>Semester 5</h3><p>Industrial pharmacy, pharmacology, formulation and dosage design.</p></li>
+      <li class="card" data-year="3"><h3>Semester 6</h3><p>Medicinal chemistry, biopharmaceutics, quality assurance.</p></li>
+      <li class="card" data-year="4"><h3>Semester 7</h3><p>Clinical pharmacy, regulatory affairs, elective streams.</p></li>
+      <li class="card" data-year="4"><h3>Semester 8</h3><p>Practice-focused work, project and internship.</p></li>
+    </ul>
+
+    <p class="note">Semester themes follow the PCI B.Pharm framework at a high level. Subject lists and detailed notes are added as they are written — verify against your own regulation copy.</p>
   </main>
+  <footer><a href="/">Home</a> · <a href="/knowledge/">Knowledge</a> · <a href="/contact/">Contact</a></footer>
+  <script src="/pharmacy/main.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+/* Area layer for /terms/
+   Extends /assets/css/style.css — accent override + long-form reading styles. */
+:root { --accent: #475569; }
+
+.area-kicker {
+  margin: 0 0 .25rem;
+  font-size: .78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--accent);
+}
+
+main section { max-width: 46rem; }
+
+.placeholder {
+  color: var(--muted);
+  background: #f7f8fa;
+  border-left: 3px solid #b45309;
+  padding: .75rem 1rem;
+  border-radius: .3rem;
+}
+
+.note {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: .88rem;
+  color: var(--muted);
+}
